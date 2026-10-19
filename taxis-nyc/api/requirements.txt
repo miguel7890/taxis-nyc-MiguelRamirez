@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-xgboost
-pandas
-pyarrow
-numpy
