@@ -11,11 +11,11 @@ Arquitectura: notebook de preparación → **API FastAPI** (Render) → **App St
 
 ## 👥 Integrantes
 
-| Nombre | Código / Correo | Rol |
-|---|---|---|
-| _Integrante 1_ | _..._ | _..._ |
-| _Integrante 2_ | _..._ | _..._ |
-| _Integrante 3_ | _..._ | _..._ |
+| Nombre |
+|---|
+|Miguel Antonio Ramirez Rivera|
+|Jose Villalta|
+
 
 ## 🌐 Despliegue
 
