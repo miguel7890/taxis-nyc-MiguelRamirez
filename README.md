@@ -123,7 +123,7 @@ curl "http://localhost:8000/pronostico?zona_id=161&fecha=2024-02-01"
 
 **App en Streamlit Community Cloud**
 - Main file path: `app/streamlit_app.py`
-- Secrets: `API_URL = "https://TU-API.onrender.com"`
+- Secrets: `API_URL = "https://taxis-nyc-miguelramirez.onrender.com"`
 
 > El plan gratuito de Render "duerme" el servicio tras inactividad; la primera petición puede tardar ~1 minuto.
 > Usa el botón **Reintentar conexión** de la barra lateral.
