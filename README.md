@@ -21,8 +21,8 @@ Arquitectura: notebook de preparación → **API FastAPI** (Render) → **App St
 
 | Componente | Enlace |
 |---|---|
-| App Streamlit | https://TU-APP.streamlit.app |
-| API (Render) – documentación | https://TU-API.onrender.com/docs |
+| App Streamlit | https://kodigo-taxis-nyc-miguelramirez.streamlit.app/ |
+| API (Render) – documentación | https://taxis-nyc-miguelramirez.onrender.com/docs |
 
 ## 📊 Datos
 
