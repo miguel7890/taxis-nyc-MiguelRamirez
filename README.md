@@ -127,3 +127,20 @@ curl "http://localhost:8000/pronostico?zona_id=161&fecha=2024-02-01"
 
 > El plan gratuito de Render "duerme" el servicio tras inactividad; la primera petición puede tardar ~1 minuto.
 > Usa el botón **Reintentar conexión** de la barra lateral.
+>
+> ## ✨ Funciones Avanzadas de Streamlit Implementadas
+
+Para enriquecer la experiencia de usuario y optimizar la reactividad, se implementaron las siguientes funciones avanzadas:
+
+1. **`st.navigation` + `st.Page`** (`app/streamlit_app.py`): Enrutamiento jerárquico moderno con íconos vectoriales de Material Symbols.
+2. **`@st.dialog`** (`app/paginas/1_pronostico.py`): Ventana modal emergente con la guía interactiva para interpretar cuantiles e incertidumbre.
+3. **`@st.fragment`** (`app/paginas/3_decision.py`): Aislamiento del panel de costos (Newsvendor) para recalcular los taxis recomendados al mover sliders sin recargar la página.
+4. **`st.plotly_chart(on_select="rerun")`** (`app/paginas/2_segmentacion.py`): Interactividad bidireccional que captura selecciones de puntos/lazo en el scatter PCA y filtra dinámicamente tablas y perfiles.
+5. **`st.metric` con `chart_data`** (`app/paginas/1_pronostico.py` y `5_monitoreo.py`): Tarjetas de métricas con mini-gráficos de tendencia incrustados.
+6. **`st.column_config`** (`app/paginas/1_pronostico.py` y `2_segmentacion.py`): Formateo enriquecido de tablas con barras de progreso (`ProgressColumn`) y formato numérico/moneda.
+7. **`@st.cache_data` con TTL** (`app/utils.py`): Almacenamiento en caché de llamadas HTTP y datasets para reducir la latencia hacia Render.
+8. **`st.segmented_control`** (`app/paginas/1_pronostico.py` y `5_monitoreo.py`): Selectores de fecha y métricas en formato de botones pastilla.
+9. **`st.badge`** (`app/streamlit_app.py`): Indicador visual de estado de conexión con el backend en la barra lateral.
+10. **`st.secrets`** (`app/utils.py`): Gestión desacoplada y segura de la variable `API_URL`.
+11. **`st.download_button`** (`app/paginas/3_decision.py`): Exportación y descarga directa del plan de flota en archivo CSV.
+12. **`st.feedback` y `st.toast`** (`app/paginas/4_ficha.py` y `5_monitoreo.py`): Calificación por estrellas y alertas flotantes en pantalla.
